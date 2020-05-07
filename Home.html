@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width">
+	<meta name="description" content="web design for TV selling Organisation">
+	<meta name="keywords" content="web design,Tv selling Organisation">
+	<meta name="author" content="brad traversy">
+	<title>TV selling Organisation</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+<script type="text/javascript">
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</head>
+<body>
+<header>
+	<div class="container">	
+		<div id="branding">
+			<h1><span class="highlight">Tv</span> selling Organisation</h1>
+		</div>
+		<nav>
+			<ul>
+				<li class="current"><a href="index.html">Home</a></li>
+				<li><a href="index.html">About</a></li>
+				<li><a href="index.html">Services</a></li>
+				<!-- <li><a href="index.html"></a></li> -->
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<section id="showcase">
+	<div class="container">
+		<!-- <h1>Tv selling Organisation</h1>
+		<p>So just log on to Cashify.in fill in the details of your old T.V and that’s it. Sell your old television sitting at home.</p> -->
+	</div>
+</section>
+
+<section id="newsletter">
+	<div class="container">
+		<h1>Subscribe To Our News Letter</h1>
+		<form action="">
+			<input type="email" placeholder="Enter Email...." name="">
+			<button type="submit" class="button_1">Subscribe</button>
+		</form>
+	</div>
+</section>
+<h2 class="marquee"><marquee>Popular Products....</marquee></h2>
+<section id="Boxes">
+	<div class="container">
+		<div class="box">
+			<img class="img" src="./images/led1.jpg">
+			<h3>MI LED smart TV</h3>
+			<p><ol style="list-style-type: circle;">
+				<li>ultra HD (4k) 3840 X 2160 p</li>
+				<li>16 W Speaker Output</li>
+				<li>60 Hz Refresh Rate</li>
+				<li>33 x HDMI | 2 x USB</li>
+			</ol></p>
+		</div>
+		<div class="box">
+			<img class="img" src="./images/led2.jpg">
+			<h3>VU 80cm(32 inch) HD Ready LED Tv</h3>
+			<p><ol style="list-style-type: circle;">
+				<li>HD Ready 1366 x 768 p</li>
+				<li>10 + 10 W Speaker Output</li>
+				<li>60 HZ Refresh Rate</li>
+				<li>2 x HDMI | 1 x USB</li>
+				<li>A+</li>
+				<li>1 year Vu Domestic Warranty</li>
+			</ol></p>
+		</div>
+		<div class="box">
+			<img class="img" src="./images/led3.jpg">
+			<h3>Samsung 80cm(32 inch) HD Ready LED TV</h3>
+			<p><ol style="list-style-type: circle;">
+				<li>HD Ready 1366 x 768 p</li>
+				<li>10 W Speaker Output</li>
+				<li>60 HZ Refresh Rate</li>
+				<li>2 x HDMI | 1 x USB</li>
+				<li>A+</li>
+				<li>1 year Standard and 1 year panel from Samsung</li>
+			</ol></p>
+		</div>
+		<!-- <div class="box">
+			<h3>HTML5 Markup language</h3>
+		</div> -->
+	</div>
+</section>
+<h1>Testimonials</h1>
+<section>
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides">
+    <q>“Television has entertained and educated the public for generations. It has also served as a vital platform for the United Nations to inform citizens on issues of global reach. In an era in which fake news and hate speech are all too widespread, the need for trustworthy television is more important than ever. The United Nations is counting on broadcasters worldwide to invest in serious, quality content for viewers, to promote understanding and tolerance to help us build a better world for tomorrow.”</q>
+    <p class="author">- Alison Smale is responsible for global communications at United Nations 
+</p>
+  </div>
+
+  <div class="mySlides">
+    <q>“Television helps bring the world to people’s lives and living rooms. Through quality programming, television sheds light on global issues and opens windows of understanding on the  struggles and hopes  of communities and families everywhere.  The United Nations looks forward to continuing our work with broadcasters to help inform, educate and build a better world.”</q>
+    <p class="author">-  Ban Ki-moon was the Secretary-General of the United Nations from 2007 to 2016</p>
+  </div>
+
+  <div class="mySlides">
+    <q>“Television has a remarkable ability to keep pace with the change that we see around us on a daily basis. As people crave information, entertainment and education so television allows them to learn, to question and to form their own opinion. Politics, whether at a European or a national level, exists for the people. A robust and independent media raises awareness and reports about the successes and challenges facing Europeans today. The emotional power of television enables viewers to explore, to empathise, to engage and to sustain democracies.”</q>
+    <p class="author">-  José Manuel Barroso was President of the European Commission from 2004 to 2014, and was Portuguese prime minister from 2002 to 2004</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</section>
+<footer class="footer-item">
+	<p>TV selling Organisation ,copyright &copy; 2018 <a href="home.html" style="color:white;text-decoration: none;">Tv Selling Organisation </a></p>
+</footer>
+</body>
+</html>
